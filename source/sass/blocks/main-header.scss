@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $color-back-header;
+  color: $color-default-white;
 
   @media (min-width: 1024px) {
     @include retina {

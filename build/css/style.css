@@ -633,6 +633,7 @@ button,
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(138, 123, 96, 0.67);
+  color: #ffffff;
 }
 
 .main-header__decor-wrapper {
@@ -726,5 +727,61 @@ button,
 @media (max-width: 699px) {
   .container {
     padding: 0 10px;
+  }
+
+  .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .main-nav__logo {
+    max-width: 167px;
+    margin: 0;
+  }
+
+  .main-nav__description {
+    margin: 50px 0 94px;
+    max-width: 305px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .main-nav__description h2 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .main-nav__description p {
+    margin: 20px 0 0 0;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 319px) {
+  .main-nav__description {
+    margin: 49px 0 149px;
+  }
+
+  .main-nav__description h2 {
+    font-size: 24px;
+    line-height: 24px;
   }
 }
