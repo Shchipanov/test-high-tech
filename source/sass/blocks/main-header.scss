@@ -1,0 +1,11 @@
+.main-header {
+  background-image: url("../img/background/header-back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $vp-1340) {
+    @include retina {
+      background-image: url("../img/background/header-back.jpg");
+    }
+  }
+}

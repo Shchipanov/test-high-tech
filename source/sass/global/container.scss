@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  max-width: $vp-1340;
+  margin: 0 auto;
+  padding: 0 80px;
+
+  @include vp-1339 {
+    padding: 0 20px;
+  }
+
+  @include vp-1019 {
+    padding: 0 14px;
+  }
+
+  @include vp-699 {
+    padding: 0 10px;
+  }
+}
