@@ -1,0 +1,46 @@
+.main-nav__logo {
+  max-width: 267px;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  @include vp-1019 {
+    margin: 0 0 0 20px;
+  }
+}
+
+.main-nav__description {
+  margin: 110px 0 213px;
+  max-width: 550px;
+
+  @include vp-1019 {
+    margin: 130px 0 182px;
+  }
+
+
+}
+
+.main-nav__description h2 {
+  margin: 0;
+
+  font-family: $ff-arial;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: $color-default-white;
+}
+
+.main-nav__description p {
+  margin: 15px 0 0 0;
+
+  font-family: $ff-arial;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 36px;
+  color: $color-default-white;
+
+  @include vp-1019 {
+    margin: 27px 0 0 0;
+  }
+}
