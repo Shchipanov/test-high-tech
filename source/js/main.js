@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {becomeDisabled} from './modules/disabled';
 import {getSelectCard, hoverCard} from './modules/selected';
 
+import {initVideo} from './modules/init-video';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -20,5 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
     becomeDisabled();
     getSelectCard();
     hoverCard();
+
+    initVideo();
   });
 });

@@ -40,58 +40,37 @@
       </header>
 
       <main class="main">
-        <section class="product">
-          <div class="product__container container">
-            <h1 class="visually-hidden">Ты сегодня покормил кота?</h1>
-            <ul class="product__list">
-              <li class="product__item" tabindex="0" data-item>
-                <div class="product__card" data-card>
-                  <h2 data-title>Сказочное заморское яство</h2>
-                  <h3>Нямушка</h3>
-                  <p>с фуа-гра</p>
-                  <p>10 порций<br>
-                    мышь в подарок</p>
-                  <div class="product__number">
-                    <b>0,5</b>
-                    <p>кг</p>
-                  </div>
-                </div>
-                <p data-description>Чего сидишь? Порадуй котэ, <span>купи.</span></p>
-              </li>
-              <li class="product__item" tabindex="0" data-item>
-                <div class="product__card" data-card>
-                  <h2 data-title>Сказочное заморское яство</h2>
-                  <h3>Нямушка</h3>
-                  <p>с рыбой</p>
-                  <p>40 порций<br>
-                    2 мыши в подарок</p>
-                  <div class="product__number">
-                    <b>2</b>
-                    <p>кг</p>
-                  </div>
-                </div>
-                <p data-description>Чего сидишь? Порадуй котэ, <span>купи.</span></p>
-              </li>
-              <li class="product__item disabled" tabindex="0" data-item>
-                <div class="product__card" data-card>
-                  <h2 data-title>Сказочное заморское яство</h2>
-                  <h3>Нямушка</h3>
-                  <p>с курой</p>
-                  <p>100 порций<br>5 мышей в подарок<br>
-                  заказчик доволен</p>
-                  <div class="product__number">
-                    <b>5</b>
-                    <p>кг</p>
-                  </div>
-                </div>
-                <p data-description>Чего сидишь? Порадуй котэ, <span>купи.</span></p>
-              </li>
-            </ul>
+        <section class="preview">
+          <div class="preview__container container">
+            <h1 class="visually-hidden">Превью</h1>
+            <div class="preview__video" data-video>
+              <div class="preview__video-background">
+                <picture>
+                  <source type="image/webp" srcset="img/poster.webp 1x, img/poster@2x.webp 2x">
+                  <img class="preview__video-poster" src="img/poster.jpg" srcset="img/poster@2x.jpg 2x" alt="Видео - компании DuffBeer." width="545" height="365" loading="lazy">
+                </picture>
+                <a class="preview__video-btn" href="https://www.youtube.com/watch?v=KcjJ3x5a6Tk" data-video-btn>
+                  <span class="visually-hidden">Воспроизвести видео.</span>
+                </a>
+              </div>
+              <div class="preview__video-player" id="player" data-video-player></div>
+            </div>
+            <div class="preview__description">
+              <div class="preview__description-year-wrapper">
+                <svg class="preview__description-year" width="148" height="66" aria-label="167 лет опыта.">
+                  <use xlink:href="img/sprite.svg#year"></use>
+                </svg>
+              </div>
+              <h3>лет нашего опыта</h3>
+              <div class="preview__paragraph-wrapper">
+                <p>DuffBeer&nbsp;&mdash; один из&nbsp;мировых лидеров по&nbsp;производству дрожжей и&nbsp;других продуктов ферментации. И&nbsp;нам нужна сильная команда профессионалов и&nbsp;единомышленников, которые будут стремиться развиваться вместе с&nbsp;DuffBeer</p>
+                <p>Мы&nbsp;всегда рады принять талантливых и&nbsp;целеустремленных людей в&nbsp;нашу дружную команду! Мы&nbsp;ценим каждого своего сотрудника и&nbsp;стремимся предоставить всем равные возможности в&nbsp;развитии и&nbsp;совершенств.</p>
+              </div>
+            </div>
           </div>
         </section>
       </main>
     </div>
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
