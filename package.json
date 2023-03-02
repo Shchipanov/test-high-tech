@@ -63,6 +63,6 @@
   },
   "dependencies": {
     "gh-pages": "^4.0.0",
-    "swiper": "^8.4.5"
+    "swiper": "^8.4.7"
   }
 }

@@ -3,6 +3,8 @@ import {becomeDisabled} from './modules/disabled';
 import {getSelectCard, hoverCard} from './modules/selected';
 
 import {initVideo} from './modules/init-video';
+import {addText} from './modules/adding-text';
+import {sliderTrainers, removeNotJs} from './modules/slider';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -23,5 +25,8 @@ window.addEventListener('DOMContentLoaded', () => {
     hoverCard();
 
     initVideo();
+    addText();
+    sliderTrainers();
+    removeNotJs();
   });
 });
