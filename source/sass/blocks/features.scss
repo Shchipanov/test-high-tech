@@ -66,6 +66,24 @@
   }
 }
 
+.features__slider.is-not-js .features__list {
+  @include vp-699 {
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  }
+
+  @include vp-319 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.features__slider.is-not-js .features__paragraph {
+  @include vp-699 {
+    display: block;
+  }
+}
+
 .features__item {
   position: relative;
   background-color: $color-smalt;

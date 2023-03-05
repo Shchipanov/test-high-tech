@@ -95,6 +95,22 @@
   }
 }
 
+.advt__slider.is-not-js .advt__list {
+  @include vp-699 {
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  }
+
+  @include vp-319 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.advt__slider.is-not-js .advt__item {
+  width: 100%;
+}
+
 .advt__item p {
   margin: 0;
 

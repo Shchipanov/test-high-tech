@@ -26,8 +26,6 @@ function addText() {
       });
     }
   }
-
-
 }
 
 export {addText};
