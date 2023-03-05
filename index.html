@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ООО «Conecom», российское подразделение французского концерна Lesaffre. Мы компания, которая честно ведет свой бизнес на территории РФ, соблюдая законодательство и гарантируя стабильность и уверенность в завтрашнем дне.
+">
+    <title>ООО «Conecom»</title>
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="js/main.min.js" as="script">
+    <link rel="preload" href="fonts/arial.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lato-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="icon" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" href="img/favicon/favicon.ico" type="image/
+    x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <header class="main-header">
+        <nav class="main-nav container">
+          <a class="main-nav__logo logo">
+            <svg class="logo__image" width="267" height="103" aria-label="Логотип ООО «Conecom».">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <div class="main-header__decor-wrapper">
+            <svg class="main-header__decor" width="363" height="368" aria-label="Декоративные элементы на фон.">
+              <use xlink:href="img/sprite.svg#header-decor"></use>
+            </svg>
+          </div>
+          <div class="main-nav__description">
+            <h1 class="visually-hidden">Сайт ООО «Conecom», российское подразделение французского концерна DuffBeerООО «Conecom», российское подразделение французского концерна DuffBeer</h1>
+            <h2>Conecom</h2>
+            <p>российское подразделение французской группы DuffBeer</p>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main">
+        <section class="preview">
+          <div class="preview__container container">
+            <h1 class="visually-hidden">Превью</h1>
+            <div class="preview__video" data-video>
+              <div class="preview__video-background">
+                <picture>
+                  <source type="image/webp" srcset="img/poster.webp 1x, img/poster@2x.webp 2x">
+                  <img class="preview__video-poster" src="img/poster.jpg" srcset="img/poster@2x.jpg 2x" alt="Видео - компании DuffBeer." width="545" height="365" loading="lazy">
+                </picture>
+                <a class="preview__video-btn" href="https://www.youtube.com/watch?v=KcjJ3x5a6Tk" data-video-btn>
+                  <span class="visually-hidden">Воспроизвести видео.</span>
+                </a>
+              </div>
+              <div class="preview__video-player" id="player" data-video-player></div>
+            </div>
+            <div class="preview__description">
+              <div class="preview__description-year-wrapper">
+                <svg class="preview__description-year" width="148" height="66" aria-label="167 лет опыта.">
+                  <use xlink:href="img/sprite.svg#year"></use>
+                </svg>
+              </div>
+              <h3>лет нашего опыта</h3>
+              <div class="preview__paragraph-wrapper">
+                <p>DuffBeer&nbsp;&mdash; один из&nbsp;мировых лидеров по&nbsp;производству дрожжей и&nbsp;других продуктов ферментации. И&nbsp;нам нужна сильная команда профессионалов и&nbsp;единомышленников, которые будут стремиться развиваться вместе с&nbsp;DuffBeer</p>
+                <p>Мы&nbsp;всегда рады принять талантливых и&nbsp;целеустремленных людей в&nbsp;нашу дружную команду! Мы&nbsp;ценим каждого своего сотрудника и&nbsp;стремимся предоставить всем равные возможности в&nbsp;развитии и&nbsp;совершенств.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mission">
+          <h2 class="visually-hidden">Миссия компании</h2>
+          <div class="mission__decor-wrapper">
+            <svg class="mission__decor" width="437" height="173" aria-label="Декоративные элементы на фон.">
+              <use xlink:href="img/sprite.svg#mission-decor"></use>
+            </svg>
+          </div>
+          <div class="mission__top container">
+            <svg class="mission__quotes" width="47" height="60" aria-label="ковычки.">
+              <use xlink:href="img/sprite.svg#quotes"></use>
+            </svg>
+            <p>Каждое 3-е хлебобулочное изделие в&nbsp;мире произведено с&nbsp;использованием продукции DuffBeer</p>
+          </div>
+          <div class="mission__bottom">
+            <div class="mission__content">
+              <h2>МИССИЯ DuffBeer</h2>
+              <p>работать вместе, что&nbsp;бы лучше накормить и&nbsp;сохранить планету</p>
+              <a class="mission__button" href="#" target="_blank">Перейти на сайт</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="features">
+          <div class="features__container container slider-control">
+            <h2>Наши преимущества</h2>
+            <div class="features__wrapper">
+              <button class="slider-control__button slider-control__button-prev is-not-js swiper-button-prev" type="button" aria-label="Предыдущий слайд." data-swiper-button="features-prev">
+                <svg width="10" height="5" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+              <div class="features__slider is-not-js swiper" data-swiper="features">
+                <ul class="features__list swiper-wrapper">
+                  <li class="features__item swiper-slide" tabindex="0">
+                    <div class="features__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/slide-1.webp 1x, img/slide-1@2x.webp 2x">
+                        <img class="features__image" src="img/slide-1.jpg" srcset="img/slide-1@2x.jpg 2x" alt="слайд №1." width="356" height="178" loading="lazy">
+                      </picture>
+                    </div>
+                    <div class="features__description">
+                      <h3>Уверенность в&nbsp;завтрашнем дне</h3>
+                      <div class="features__paragraph" data-features="paragraph">
+                        <p>ООО &laquo;Conecom&raquo;, российское подразделение французского концерна DuffBeer. Мы&nbsp;компания, которая честно ведет свой бизнес на&nbsp;территории&nbsp;РФ, соблюдая законодательство и&nbsp;гарантируя стабильность и&nbsp;уверенность в&nbsp;завтрашнем дне.</p>
+                      </div>
+                      <button class="features__button" type="button" data-features="button" aria-label="кнопка раскрытия описания слайда.">
+                        <div class="features__button-image">
+                          <svg width="15" height="15" aria-hidden="true" focusable="false">
+                            <use xlink:href="img/sprite.svg#slide-button"></use>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="features__item swiper-slide" tabindex="0">
+                    <div class="features__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/slide-2.webp 1x, img/slide-2@2x.webp 2x">
+                        <img class="features__image" src="img/slide-2.jpg" srcset="img/slide-2@2x.jpg 2x" alt="слайд №2." width="356" height="178" loading="lazy">
+                      </picture>
+                    </div>
+                    <div class="features__description">
+                      <h3>Безопасность на&nbsp;рабочем месте&nbsp;- приоритет &#8470;&nbsp;1</h3>
+                      <div class="features__paragraph" data-features="paragraph">
+                        <p>Вопросам безопасности и&nbsp;качества пищевой продукции в&nbsp;нашей компании уделяется повышенное внимание. Все производства группы DuffBeer в&nbsp;России постоянно работают над улучшением процессов и&nbsp;стремятся сделать все возможное, чтобы рабочий процесс был максимально безопасным и&nbsp;комфортным.</p>
+                      </div>
+                    </div>
+                    <button class="features__button" type="button" data-features="button" aria-label="кнопка раскрытия описания слайда.">
+                      <div class="features__button-image">
+                        <svg width="15" height="15" aria-hidden="true" focusable="false">
+                          <use xlink:href="img/sprite.svg#slide-button"></use>
+                        </svg>
+                      </div>
+                    </button>
+                  </li>
+                  <li class="features__item swiper-slide" tabindex="0">
+                    <div class="features__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/slide-3.webp 1x, img/slide-3@2x.webp 2x">
+                        <img class="features__image" src="img/slide-3.jpg" srcset="img/slide-3@2x.jpg 2x" alt="слайд №3." width="356" height="178" loading="lazy">
+                      </picture>
+                    </div>
+                    <div class="features__description">
+                      <h3>Стабильная заработная плата</h3>
+                      <div class="features__paragraph" data-features="paragraph">
+                        <p>Мы&nbsp;обеспечиваем нашим сотрудникам стабильную заработную плату в&nbsp;соответствии с&nbsp;рынком региона. Средний стаж работы в&nbsp;нашей компании&nbsp;&mdash; 7&nbsp;лет.</p>
+                      </div>
+                    </div>
+                    <button class="features__button" type="button" data-features="button" aria-label="кнопка раскрытия описания слайда.">
+                      <div class="features__button-image">
+                        <svg width="15" height="15" aria-hidden="true" focusable="false">
+                          <use xlink:href="img/sprite.svg#slide-button"></use>
+                        </svg>
+                      </div>
+                    </button>
+                  </li>
+                  <li class="features__item swiper-slide" tabindex="0">
+                    <div class="features__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/slide-4.webp 1x, img/slide-4@2x.webp 2x">
+                        <img class="features__image" src="img/slide-4.jpg" srcset="img/slide-4@2x.jpg 2x" alt="слайд №4." width="356" height="178" loading="lazy">
+                      </picture>
+                    </div>
+                    <div class="features__description">
+                      <h3>Заботимся о&nbsp;здоровье сотрудников</h3>
+                      <div class="features__paragraph" data-features="paragraph">
+                        <p>Каждый сотрудник в&nbsp;нашей компании обеспечен полисом добровольного медицинского страхования. Кроме того, на&nbsp;каждом заводе есть медицинский пункт для сотрудников. Осуществляется страхование от&nbsp;несчастных случаев с&nbsp;первого дня работы.</p>
+                      </div>
+                    </div>
+                    <button class="features__button" type="button" data-features="button" aria-label="кнопка раскрытия описания слайда.">
+                      <div class="features__button-image">
+                        <svg width="15" height="15" aria-hidden="true" focusable="false">
+                          <use xlink:href="img/sprite.svg#slide-button"></use>
+                        </svg>
+                      </div>
+                    </button>
+                  </li>
+                  <li class="features__item swiper-slide" tabindex="0">
+                    <div class="features__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/slide-5.webp 1x, img/slide-5@2x.webp 2x">
+                        <img class="features__image" src="img/slide-5.jpg" srcset="img/slide-5@2x.jpg 2x" alt="слайд №5." width="356" height="178" loading="lazy">
+                      </picture>
+                    </div>
+                    <div class="features__description">
+                      <h3>Предоставление удобной спецодежды и&nbsp;СИЗ для производственного персонала</h3>
+                      <div class="features__paragraph" data-features="paragraph">
+                        <p>Мы&nbsp;предоставляем удобные СИЗ и&nbsp;спецодежду и&nbsp;в&nbsp;случае износа или порчи обмениваются на&nbsp;новые.</p>
+                      </div>
+                    </div>
+                    <button class="features__button" type="button" data-features="button" aria-label="кнопка раскрытия описания слайда.">
+                      <div class="features__button-image">
+                        <svg width="15" height="15" aria-hidden="true" focusable="false">
+                          <use xlink:href="img/sprite.svg#slide-button"></use>
+                        </svg>
+                      </div>
+                    </button>
+                  </li>
+                  <li class="features__item swiper-slide" tabindex="0">
+                    <div class="features__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/slide-6.webp 1x, img/slide-6@2x.webp 2x">
+                        <img class="features__image" src="img/slide-6.jpg" srcset="img/slide-6@2x.jpg 2x" alt="слайд №6." width="356" height="178" loading="lazy">
+                      </picture>
+                    </div>
+                    <div class="features__description">
+                      <h3>Обучение: различные программы обучения и&nbsp;профессиональные тренинги</h3>
+                      <div class="features__paragraph" data-features="paragraph">
+                        <p>Мы&nbsp;уделяем много внимания развитию наших сотрудников. В&nbsp;компании работает Внутренний центр обучений и&nbsp;ежегодно проводится большое количество обучающих мероприятий как локально на&nbsp;заводах, так и&nbsp;в&nbsp;головном офисе DuffBeer во&nbsp;Франции.</p>
+                      </div>
+                    </div>
+                    <button class="features__button" type="button" data-features="button" aria-label="кнопка раскрытия описания слайда.">
+                      <div class="features__button-image">
+                        <svg width="15" height="15" aria-hidden="true" focusable="false">
+                          <use xlink:href="img/sprite.svg#slide-button"></use>
+                        </svg>
+                      </div>
+                    </button>
+                  </li>
+                  <li class="features__item swiper-slide" tabindex="0">
+                    <div class="features__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/slide-7.webp 1x, img/slide-7@2x.webp 2x">
+                        <img class="features__image" src="img/slide-7.jpg" srcset="img/slide-7@2x.jpg 2x" alt="слайд №7." width="356" height="178" loading="lazy">
+                      </picture>
+                    </div>
+                    <div class="features__description">
+                      <h3>Возможности для реализации творческого потенциала</h3>
+                      <div class="features__paragraph" data-features="paragraph">
+                        <p>Мы&nbsp;ставим перед собой амбициозные и&nbsp;интересные цели, а&nbsp;реализация задач является командной работой сотрудников из&nbsp;различных подразделений. Мы&nbsp;также принимаем активное участие в&nbsp;работе над кросс-функциональными проектам с&nbsp;коллегами из&nbsp;других стран присутствия DuffBeer.</p>
+                      </div>
+                    </div>
+                    <button class="features__button" type="button" data-features="button" aria-label="кнопка раскрытия описания слайда.">
+                      <div class="features__button-image">
+                        <svg width="15" height="15" aria-hidden="true" focusable="false">
+                          <use xlink:href="img/sprite.svg#slide-button"></use>
+                        </svg>
+                      </div>
+                    </button>
+                  </li>
+                  <li class="features__item swiper-slide" tabindex="0">
+                    <div class="features__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/slide-8.webp 1x, img/slide-8@2x.webp 2x">
+                        <img class="features__image" src="img/slide-8.jpg" srcset="img/slide-8@2x.jpg 2x" alt="слайд №8." width="356" height="178" loading="lazy">
+                      </picture>
+                    </div>
+                    <div class="features__description">
+                      <h3>Мы&nbsp;- семейная компания и&nbsp;любим проводить время вместе</h3>
+                      <div class="features__paragraph" data-features="paragraph">
+                        <p>Ежегодно мы&nbsp;проводим корпоративные мероприятия не&nbsp;только для наших сотрудников, но&nbsp;и&nbsp;для семей наших сотрудников. А&nbsp;корпоративные подарки для детей сотрудников&nbsp;&mdash; наша добрая предновогодняя традиция.</p>
+                      </div>
+                    </div>
+                    <button class="features__button" type="button" data-features="button" aria-label="кнопка раскрытия описания слайда.">
+                      <div class="features__button-image">
+                        <svg width="15" height="15" aria-hidden="true" focusable="false">
+                          <use xlink:href="img/sprite.svg#slide-button"></use>
+                        </svg>
+                      </div>
+                    </button>
+                  </li>
+                  <li class="features__item swiper-slide" tabindex="0">
+                    <div class="features__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/slide-9.webp 1x, img/slide-9@2x.webp 2x">
+                        <img class="features__image" src="img/slide-9.jpg" srcset="img/slide-9@2x.jpg 2x" alt="слайд №9." width="356" height="178" loading="lazy">
+                      </picture>
+                    </div>
+                    <div class="features__description">
+                      <h3>Мы&nbsp;- социально ответственная компания и&nbsp;заботимся об&nbsp;окружающих</h3>
+                      <div class="features__paragraph" data-features="paragraph">
+                        <p>Наша миссия лежит в&nbsp;основе социально-корпоративной ответственности. Мы&nbsp;ведем свою деятельность в&nbsp;соответствии с&nbsp;тремя основными правилами: мы&nbsp;заботимся о&nbsp;людях; наша деятельность устойчива по&nbsp;своей природе; мы&nbsp;заботимся об&nbsp;окружающей среде.</p>
+                      </div>
+                    </div>
+                    <button class="features__button" type="button" data-features="button" aria-label="кнопка раскрытия описания слайда.">
+                      <div class="features__button-image">
+                        <svg width="15" height="15" aria-hidden="true" focusable="false">
+                          <use xlink:href="img/sprite.svg#slide-button"></use>
+                        </svg>
+                      </div>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="features__pagination swiper-pagination"></div>
+              <button class="slider-control__button slider-control__button-next is-not-js swiper-button-next" type="button" aria-label="Следующий слайд." data-swiper-button="features-next">
+                <svg width="10" height="5" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="advt">
+          <div class="advt__decor-wrapper">
+            <svg class="advt__decor" width="260" height="416" aria-label="Декоративные элементы на фон.">
+              <use xlink:href="img/sprite.svg#advnt-decor"></use>
+            </svg>
+          </div>
+          <div class="advt__decor-wrapper advt__decor-wrapper--two">
+            <svg class="advt__decor advt__decor--two" width="292" height="368" aria-label="Декоративные элементы на фон.">
+              <use xlink:href="img/sprite.svg#advnt-decor-two"></use>
+            </svg>
+          </div>
+          <div class="advt__container container slider-control advt-btn">
+            <h2 class="visually-hidden">Реклама</h2>
+            <h3>DuffBeer</h3>
+            <p>Ключевой мировой игрок в&nbsp;области ферментации</p>
+            <div class="advt__wrapper">
+              <button class="slider-control__button slider-control__button-prev is-not-js swiper-button-prev" type="button" aria-label="Предыдущий слайд." data-swiper-button="advt-prev">
+                <svg width="10" height="5" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+              <div class="advt__slider is-not-js swiper" data-swiper="advt">
+                <ul class="advt__list swiper-wrapper">
+                  <li class="advt__item swiper-slide" tabindex="0">
+                    <div class="advt__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/advt-1.webp 1x, img/advt-1@2x.webp 2x">
+                        <img class="advt__image" src="img/advt-1.jpg" srcset="img/advt-1@2x.jpg 2x" alt="рекламный слайд." width="565" height="294" loading="lazy">
+                      </picture>
+                      <div class="advt__description">
+                        <p>10&nbsp;700+ сотрудников</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="advt__item advt__item--short swiper-slide" tabindex="0">
+                    <div class="advt__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/advt-2.webp 1x, img/advt-2@2x.webp 2x">
+                        <img class="advt__image" src="img/advt-2.jpg" srcset="img/advt-2@2x.jpg 2x" alt="рекламный слайд." width="294" height="240" loading="lazy">
+                      </picture>
+                      <div class="advt__description">
+                        <p>570 экспертов R&amp;D</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="advt__item advt__item--short advt__item--number swiper-slide" tabindex="0">
+                    <div class="advt__image-wrapper">
+                      <svg class="advt__image" width="162" height="73" aria-hidden="true" focusable="false">
+                        <use xlink:href="img/sprite.svg#167"></use>
+                      </svg>
+                    </div>
+                    <p>лет опыта<br> на&nbsp;рынке хлебопечения</p>
+                  </li>
+                  <li class="advt__item swiper-slide" tabindex="0">
+                    <div class="advt__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/advt-3.webp 1x, img/advt-3@2x.webp 2x">
+                        <img class="advt__image" src="img/advt-3.jpg" srcset="img/advt-3@2x.jpg 2x" alt="рекламный слайд." width="565" height="294" loading="lazy">
+                      </picture>
+                      <div class="advt__description">
+                        <p>25+&nbsp;лет в&nbsp;Росии</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="advt__item swiper-slide" tabindex="0">
+                    <div class="advt__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/advt-4.webp 1x, img/advt-4@2x.webp 2x">
+                        <img class="advt__image" src="img/advt-4.jpg" srcset="img/advt-4@2x.jpg 2x" alt="рекламный слайд." width="565" height="294" loading="lazy">
+                      </picture>
+                      <div class="advt__description">
+                        <p>Филиалы в&nbsp;50&nbsp;странах</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="advt__item advt__item--short  advt__item--number advt__item--number-last swiper-slide" tabindex="0">
+                    <div class="advt__image-wrapper">
+                      <svg class="advt__image" width="59" height="77" aria-hidden="true" focusable="false">
+                        <use xlink:href="img/sprite.svg#4"></use>
+                      </svg>
+                    </div>
+                    <p>направления<br> деятельности</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="advt__pagination swiper-pagination"></div>
+              <button class="slider-control__button  slider-control__button-next is-not-js swiper-button-next" type="button" aria-label="Следующий слайд." data-swiper-button="advt-next">
+                <svg width="10" height="5" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+
+
+      </main>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
