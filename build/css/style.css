@@ -1744,9 +1744,6 @@ button,
   padding-top: 80px;
   padding-bottom: 101px;
   position: relative;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1755,6 +1752,8 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-image: url("../img/background/mission-back.jpg");
   background-repeat: no-repeat;
@@ -2292,7 +2291,7 @@ button,
 }
 
 .advt__wrapper .swiper-pagination-horizontal.swiper-pagination-bullets > .swiper-pagination-bullet {
-  margin: 0px var(--swiper-pagination-bullet-horizontal-gap, 3.5px);
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 3.5px);
 }
 
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
