@@ -213,16 +213,12 @@
   transform: rotate(45deg);
 }
 
-.features__button-image {
-  width: 100%;
-  height: 100%;
-  max-width: 20px;
-}
 
-.features__button svg {
+.features__button-image{
   width: 100%;
   height: 100%;
   display: block;
+  max-width: 20px;
 }
 
 .features__wrapper .swiper-pagination-bullets.swiper-pagination-horizontal {
