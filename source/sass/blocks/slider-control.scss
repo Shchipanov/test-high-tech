@@ -8,6 +8,10 @@
     display: block;
     width: 25px;
   }
+
+  @include vp-319 {
+    width: 22px;
+  }
 }
 
 .slider-control__button-prev.is-not-js,
@@ -16,21 +20,41 @@
 }
 
 .slider-control .swiper-button-prev {
-  left: -22px;
-  top: 50%;
+  left: -26px;
+  top: 48%;
 
   &::after {
     display: none;
+  }
+
+  @include vp-319 {
+    left: -20px;
+    top: 48%;
   }
 }
 
 .slider-control .swiper-button-next {
-  right: -22px;
-  top: 50%;
+  right: -24px;
+  top: 48%;
 
   &::after {
     display: none;
   }
+
+  @include vp-319 {
+    right: -18px;
+    top: 48%;
+  }
+}
+
+.slider-control.advt-btn .swiper-button-prev {
+  left: -21px;
+  top: 44%;
+}
+
+.slider-control.advt-btn .swiper-button-next {
+  right: -18px;
+  top: 44%;
 }
 
 .slider-control__button svg {

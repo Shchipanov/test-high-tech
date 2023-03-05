@@ -4,7 +4,7 @@
   overflow: hidden;
   background-color: $color-smalt;
 
-   @include vp-1019 {
+  @include vp-1019 {
     margin-top: 74px;
   }
 
@@ -23,7 +23,6 @@
 
   position: relative;
   overflow: hidden;
-
 
   @include vp-1339 {
     padding-top: 94px;
@@ -103,18 +102,17 @@
   object-fit: cover;
 
   @include vp-1019 {
-    transform: translate(65%,-23%)
+    transform: translate(65%, -23%);
   }
 
   @include vp-699 {
     max-width: 179px;
-    transform: translate(1%,-35%);
+    transform: translate(1%, -35%);
   }
 
   @include vp-319 {
-    transform: translate(27%,-20%);
+    transform: translate(27%, -20%);
   }
-
 }
 
 .mission__decor {
@@ -126,8 +124,7 @@
   padding-top: 80px;
   padding-bottom: 101px;
   position: relative;
-  align-items: center;
-    z-index: 1;
+  z-index: 1;
 
   display: flex;
   flex-direction: column;
@@ -154,8 +151,9 @@
     padding-bottom: 55px;
   }
 
-   @include vp-319 {
-        padding-top: 28px;
+  @include vp-319 {
+    padding-top: 28px;
+    padding-bottom: 60px;
   }
 }
 
@@ -205,16 +203,16 @@
 
     &::before {
       width: 15px;
-    height: 1px;
-    left: -29px;
-    top: 44%;
+      height: 1px;
+      left: -29px;
+      top: 44%;
     }
 
     &::after {
       width: 15px;
-    height: 1px;
-    right: -29px;
-    top: 44%;
+      height: 1px;
+      right: -29px;
+      top: 44%;
     }
   }
 
@@ -223,14 +221,13 @@
 
     &::before {
       left: -31px;
-    top: 45%;
+      top: 45%;
     }
 
     &::after {
       right: -31px;
-    top: 45%;
+      top: 45%;
     }
-
   }
 }
 
@@ -256,7 +253,7 @@
     margin: 18px 0 11px;
 
     font-size: 16px;
-line-height: 20px;
+    line-height: 20px;
   }
 
   @include vp-319 {
@@ -311,7 +308,6 @@ line-height: 20px;
 
     font-size: 14px;
   }
-
 
   @include vp-319 {
     max-width: 197px;

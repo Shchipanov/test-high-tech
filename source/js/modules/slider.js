@@ -12,11 +12,11 @@ const sliderTrainers = () => {
       const swiper = new Swiper('[data-swiper="features"]', {
         modules: [Navigation, Pagination],
 
-        direction: "horizontal",
+        direction: 'horizontal',
 
         watchOverflow: true,
 
-        loop: false,
+        loop: true,
 
         autoHeight: true,
 
@@ -31,7 +31,7 @@ const sliderTrainers = () => {
         setWrapperSize: true,
 
         pagination: {
-          el: ".swiper-pagination",
+          el: '.features__pagination',
           clickable: true,
         },
 
@@ -56,8 +56,61 @@ const sliderTrainers = () => {
       duplicates.forEach((el) => el.removeAttribute('tabindex'));
     }
   }
+};
 
+const sliderAdvt = () => {
+  let viewport = window.innerWidth;
+  if (viewport < 700) {
+    if (!swiperContainer || !swiperButtons) {
+      return;
+    } else {
+      const swiper = new Swiper('[data-swiper="advt"]', {
+        modules: [Navigation, Pagination],
 
+        direction: 'horizontal',
+
+        watchOverflow: true,
+
+        loop: true,
+
+        autoHeight: true,
+
+        keyboard: {
+          enabled: true,
+        },
+
+        observer: true,
+
+        grabCursor: true,
+
+        setWrapperSize: true,
+
+        pagination: {
+          el: '.advt__pagination',
+          clickable: true,
+        },
+
+        navigation: {
+          prevEl: '[data-swiper-button="advt-prev"]',
+          nextEl: '[data-swiper-button="advt-next"]',
+        },
+
+        breakpoints: {
+          300: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+          },
+        },
+      });
+      swiper.init();
+      const duplicates = document.querySelectorAll('.swiper-slide-duplicate');
+      duplicates.forEach((el) => el.removeAttribute('tabindex'));
+    }
+  }
 };
 
 const removeNotJs = () => {
@@ -68,4 +121,4 @@ const removeNotJs = () => {
   swiperContainer.forEach((el) => el.classList.remove('is-not-js'));
 };
 
-export {sliderTrainers, removeNotJs};
+export {sliderTrainers, removeNotJs, sliderAdvt};

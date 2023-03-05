@@ -1,6 +1,5 @@
 .features {
   padding-top: 100px;
-  padding-bottom: 100px;
 
   background-color: $color-linen;
 
@@ -10,6 +9,10 @@
 
   @include vp-699 {
     padding-top: 61px;
+  }
+
+  @include vp-319 {
+    padding-top: 51px;
   }
 }
 
@@ -78,6 +81,7 @@
   height: auto;
 
   aspect-ratio: 356/178;
+  background-color: $color-soya-bean;
 
   @include vp-1019 {
     aspect-ratio: 260/178;
@@ -195,7 +199,6 @@
   width: 100%;
   height: 100%;
   max-width: 20px;
-  //margin-left: auto;
 }
 
 .features__button svg {
@@ -205,15 +208,29 @@
 }
 
 .features__wrapper .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: -25px;
+  bottom: -15px;
 }
 
 .features__wrapper .swiper-pagination-bullet {
-    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 5px));
-    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 5px));
-    display: inline-block;
+  width: var(
+    --swiper-pagination-bullet-width,
+    var(--swiper-pagination-bullet-size, 5px)
+  );
+  height: var(
+    --swiper-pagination-bullet-height,
+    var(--swiper-pagination-bullet-size, 5px)
+  );
+  display: inline-block;
+
+  background-color: $color-smalt2;
 }
 
 .features__wrapper .swiper {
   margin-left: 0;
+}
+
+.features__wrapper .swiper-wrapper {
+  @include vp-699 {
+    height: auto !important;
+  }
 }

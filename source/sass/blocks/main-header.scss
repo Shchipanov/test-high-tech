@@ -14,7 +14,7 @@
     }
   }
 
-   @include vp-1019 {
+  @include vp-1019 {
     background-position: bottom;
   }
 }
@@ -27,7 +27,7 @@
   bottom: 0;
   transform: translate(0, 28%);
 
-  @include vp-1019{
+  @include vp-1019 {
     display: none;
   }
 }
